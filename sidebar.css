@@ -1,0 +1,41 @@
+.sidebar {
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    background-color: white;
+    width: 95px;
+    position: fixed;
+    transition: width 200ms ease-in-out;
+}
+
+.sidebar-link {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(149, 148, 148, 0.498);
+}
+
+.sidebar-link img {
+    height: 35px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.sidebar.collapse .sidebar-link{
+    visibility: hidden;
+}
+
+.sidebar.collapse{
+    width:0px;
+}
